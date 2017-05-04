@@ -1,0 +1,193 @@
+.Strict {
+  font-family: 'Press Start 2P', cursive;
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+  bottom: -45px;
+  left: -5px;
+  border: black solid;
+  padding: 1px;
+  background-color: black;
+  color: green;
+}
+
+.Start {
+  font-family: 'Press Start 2P', cursive;
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+  left: 85px;
+  bottom: -22px;
+  border: black solid;
+  padding: 1px;
+  background-color: black;
+  color: green;
+}
+
+.ToggleWrapper {
+  left: 90px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.floatLeft {
+  font-size: 1.3em;
+  float: left;
+  position: relative;
+  margin: 0px;
+  bottom: -12px;
+  left: 28px;
+  background-color: #32050C;
+  color: #430710;
+  width: 40px;
+  border: 1px solid #333;
+}
+
+.countText {
+  position: relative;
+  float: left;
+  bottom: -45px;
+  left: -16px;
+  margin: 0px;
+  font-family: 'Press Start 2P', cursive;
+  border: black solid;
+  padding: 1px;
+  background-color: black;
+  color: green;
+}
+
+.redButton {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+// background-color: #CC1A00; background: radial-gradient(ellipse at center, #FF0000, #6F2626);
+  position: relative;
+  float: right;
+  left: -40px;
+  border: black 1px solid;
+  box-shadow: 0px 2px 1px black, inset 0px 0px 3px;
+  @apply --clickable;
+}
+
+.yellowButton {
+  display: inline-block;
+  float: right;
+  position: relative;
+  left: -60px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+// background-color: #FFE26C; background: radial-gradient(ellipse at center, #FFF100, #C2AF12);
+  border: black 1px solid;
+  box-shadow: 0px 2px 1px black, inset 0px 0px 3px;
+  @apply --clickable;
+}
+
+.redButton:active {
+  box-shadow: inset 0px 0px 3px;
+}
+
+.yellowButton:active {
+  box-shadow: inset 0px 0px 3px;
+
+}
+
+.limitActive {
+  color: #DC0D29
+}
+
+.red {
+  @apply --panel-size;
+  margin: 0px;
+  background-color: #7F0B00;
+  border-top-left-radius: 100%;
+  border-bottom: 2px black;
+
+}
+
+.blue {
+  @apply --panel-size;
+  margin: 0px;
+  background-color: #00317F;
+  border-top-right-radius: 100%;
+
+}
+
+.yellow {
+  @apply --panel-size;
+  margin: 0px;
+  background-color: #cca707;
+  border-bottom-left-radius: 100%;
+
+}
+
+.green {
+  @apply --panel-size;
+  margin: 0px;
+  background-color: #00a74a;
+  border-bottom-right-radius: 100%;
+
+}
+
+.center {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  z-index: 1;
+  left: 120px;
+  background-color: white;
+  bottom: 120px;
+  border-radius: 100%;
+  border: 10px solid #333;
+}
+
+.mainCircle {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  background-color: #333;
+  top: 10vh;
+  box-shadow: 2px 2px 12px #222;
+
+}
+
+.Title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.is-activeRed {
+  background-color: #FF1600
+}
+
+.is-activeBlue {
+  background-color: #4C91FF
+
+}
+
+.is-activeYellow {
+  background-color: #FFEB3B
+
+}
+
+.is-activeGreen {
+  background-color: lightgreen;
+
+}
+
+.is-activeText {
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+
+  .containerCircle {
+
+    transform: scale(0.6);
+
+  }
+}

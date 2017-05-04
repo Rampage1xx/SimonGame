@@ -1,0 +1,29 @@
+:root {
+  --green: #00a74a;
+  --blue: #094a8f;
+  --yellow: #cca707;
+  --red: #9f0f17;
+  --panel-size: {
+    height: 240px;
+    width: 240px;
+    border: 5px solid #333;
+    display: inline-block;
+    border-bottom: 2px solid #333;
+
+  };
+  --clickable: {
+    pointer-events: auto;
+    cursor: pointer;
+    --circleHeight: 30%;
+  }
+}
+
+html {
+  background-color: wheat;
+
+}
+
+@font-face {
+  font-family: 'PressStart2P';
+  src: url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+}

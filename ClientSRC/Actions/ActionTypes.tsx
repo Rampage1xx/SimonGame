@@ -1,0 +1,17 @@
+export const CLEAR_BOTH_LISTS = 'CLEAR_BOTH_LISTS';
+export const PLAYER_GENERATED_COLOR = 'PLAYER_GENERATED_COLOR';
+export const GAME_OVER = 'GAME_OVER';
+export const COMPUTER_GENERATED_COLOR = 'COMPUTER_GENERATED_COLOR';
+
+export const ACTIVE_COLOR = 'ACTIVE_COLOR';
+export const PLAYER_CLEAR_LIST = 'PLAYER_CLEAR_LIST';
+export const PLAYER_TURN = 'PLAYER_TURN';
+export const RESET_LIMIT = 'RESET_LIMIT';
+export const TURN_OFF = 'TURN_OFF';
+export const TURN_ON = 'TURN_ON';
+
+export const COLOR_REPLAY = 'COLOR_REPLAY';
+export const GAME_STARTED = 'GAME_STARTED';
+export const STRICT_MODE = 'STRICT_MODE';
+
+export const PLAYER_VICTORY = 'PLAYER_VICTORY';
