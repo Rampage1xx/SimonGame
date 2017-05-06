@@ -11,7 +11,7 @@ declare const window: any;
 const composeEnhancers: any = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 // we create an History model kinda intercepts the url from the browser (not accurate)
-export const History = createHistory();
+export const History: any = createHistory();
 const sagaMiddleware = createSagaMiddleware();
 
 const historyRouter = routerMiddleware(History);
