@@ -9,7 +9,6 @@ export class SimonColor extends React.PureComponent<any, any> {
 
     constructor(props) {
         super(props);
-        console.log(props, 'props inside');
         this.updateStatus(props);
         this.onClickHandler = this.onClickHandler.bind(this);
     }

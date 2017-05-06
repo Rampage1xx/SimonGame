@@ -1,0 +1,13 @@
+
+/.gitignore
+/node_modules/
+/tests/out/
+/.idea/
+/dist/319c77102049da3622a954acd189f1eb.mp3
+/dist/c3c86e71f309dde162a2e9b52cbc702f.mp3
+/dist/bundle.js
+/dist/Assets/
+/dist/f4a912ee52e2c884a80499208c5568cc.mp3
+/dist/f3c18b98bab33c0fbedde9cb67bdfcf2.mp3
+/dist/
+/SimonGame.rar

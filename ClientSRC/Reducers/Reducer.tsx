@@ -26,7 +26,7 @@ const randomGeneratedColorsInitialState = Map({
 
 // REDUCERS
 
-export const playerReducer: IplayerReducer = (state = playerInitialState, action) => {
+export const playerReducer: IplayerReducer = (state = playerInitialState, action?) => {
     switch (action.type) {
 
         case PLAYER_GENERATED_COLOR:
@@ -46,7 +46,7 @@ export const playerReducer: IplayerReducer = (state = playerInitialState, action
     }
 };
 
-export const computerReducer: IcomputerReducer = (state = randomGeneratedColorsInitialState, action) => {
+export const computerReducer: IcomputerReducer = (state = randomGeneratedColorsInitialState, action?) => {
     const stateUpdate = (value: number) => state.update('generated_colors', (list: List<number>) => list.push(value));
     switch (action.type) {
         case COMPUTER_GENERATED_COLOR:
@@ -71,7 +71,7 @@ export const computerReducer: IcomputerReducer = (state = randomGeneratedColorsI
     }
 };
 
-export const generalGameReducer: IgeneralGameReducer = (state = generalGameInitialState, action) => {
+export const generalGameReducer: IgeneralGameReducer = (state = generalGameInitialState, action?) => {
     switch (action.type) {
         case 'TIMEOUT':
             return state.set('TIMEOUT', action.timeout);

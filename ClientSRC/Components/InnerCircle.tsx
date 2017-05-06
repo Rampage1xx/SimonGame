@@ -39,7 +39,7 @@ export class InnerCircle extends React.PureComponent<any, any> {
     }
 
     private startGameToggle() {
-        if (this.ON && !this.started) randomColorGenerator();
+        if (this.ON && !this.started) {randomColorGenerator()}
     }
 
     private onOff() {
@@ -54,8 +54,8 @@ export class InnerCircle extends React.PureComponent<any, any> {
             <div className='center'>
                 <h3 className='Title'>Simon Game</h3>
                 <p className={ this.counterNumberCSS }>{ this.counter }</p>
-                <div className='redButton' onClick={ this.startGameToggle }/>
-                <div className='yellowButton' onClick={ this.strictModeToggle }/>
+                <div role='button' className='redButton' onClick={ this.startGameToggle }/>
+                <div role='button' className='yellowButton' onClick={ this.strictModeToggle }/>
                 <p className='countText'> CnT </p>
                 <p className={ this.strictTextCSS }> ScT </p>
                 <p className={ this.startTextCSS }> SrT </p>

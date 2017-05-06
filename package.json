@@ -6,7 +6,10 @@
   "scripts": {
     "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha ./test/*.test.js",
     "test-watch": "nodemon --exec \"npm test\"",
-    "test-jest": "jest || ECHO. "
+    "test-jest": "jest || ECHO. ",
+    "build": "webpack",
+    "setup":"npm i && webpack",
+    "start":"node server.js"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -79,6 +82,7 @@
     "expect": "^1.20.2",
     "express": "^4.15.2",
     "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
     "jest": "^19.0.2",
     "jest-enzyme": "^3.0.0",
     "postcss": "^5.2.16",
@@ -103,6 +107,7 @@
     "tslint-microsoft-contrib": "^4.0.1",
     "tslint-react": "^2.5.0",
     "typescript": "^2.2.2",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }

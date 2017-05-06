@@ -9,17 +9,17 @@ import {playerTurnSelector} from './Selectors/playerSelector';
 import './style.css';
 
 export class AppContainer extends React.Component<IAppComponentProps, any> {
-    constructor(props) {
+    constructor(props: IAppComponentProps) {
         super(props);
 
     }
 
-
-    private   capitalize(colorString) {
+    private   capitalize(colorString: string) {
         return colorString.charAt(0).toUpperCase() + colorString.slice(1);
     }
 
     private generateColorCSS() {
+        // generate the css and adds the is-active tag if it is choosen
         const colorNumber = this.props.generalGameStatus.color - 1;
         const colorArray = ['red', 'blue', 'yellow', 'green'];
 
