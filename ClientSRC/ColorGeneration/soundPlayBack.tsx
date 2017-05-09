@@ -1,7 +1,8 @@
-import * as sound1 from '../Assets/simonSound1.mp3';
-import * as sound2 from '../Assets/simonSound2.mp3';
-import * as sound3 from '../Assets/simonSound3.mp3';
-import * as sound4 from '../Assets/simonSound4.mp3';
+declare const require;
+const sound1 = require('../Assets/simonSound1.mp3');
+const sound2 = require('../Assets/simonSound2.mp3');
+const sound3 = require('../Assets/simonSound3.mp3');
+const sound4 = require( '../Assets/simonSound4.mp3');
 const audio1 = new Audio(sound1);
 const audio2 = new Audio(sound2);
 const audio3 = new Audio(sound3);
