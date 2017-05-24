@@ -14,13 +14,13 @@ export class SimonColor extends React.PureComponent<IProps, any> {
     private playerTurn: boolean;
     private ON: boolean;
 
-    constructor(props) {
+    constructor(props: IProps) {
         super(props);
         this.updateStatus(props);
         this.onClickHandler = this.onClickHandler.bind(this);
     }
 
-    private updateStatus(props) {
+    private updateStatus(props: IProps) {
         const {css, colorNumber, playerTurn, ON} = props;
         this.css = css;
         this.colorNumber = colorNumber;
@@ -28,11 +28,9 @@ export class SimonColor extends React.PureComponent<IProps, any> {
         this.ON = ON;
     }
 
-    private componentDidUpdate(prevState, prevProps) {
 
-    }
 
-    private onClickHandler() {
+    private onClickHandler(): void {
         if (this.playerTurn && this.ON) colorDispatch(this.colorNumber);
 
     }
