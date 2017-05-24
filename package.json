@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha ./test/*.test.js",
-    "test-jest": "jest  || ECHO. ",
+    "test": "jest  || ECHO. ",
     "test-watch": "jest --watch",
     "build": "webpack",
     "setup": "npm i && webpack",

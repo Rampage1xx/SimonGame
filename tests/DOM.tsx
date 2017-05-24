@@ -47,8 +47,16 @@ describe('testing the InnerCircle Component', () => {
 
     const ComponentInnerCircle = <InnerCircle { ...props }/>;
     const innerCircleShallow = shallow(ComponentInnerCircle);
+    const isActive = (parameter: string) => innerCircleShallow.find(`${parameter} .is-activeText`).type();
 
-    it('should shallow render', () => {
-        console.log(innerCircleShallow.debug())
+    it('should shallow render the whole tree', () => {
+        expect(innerCircleShallow.children().length).toEqual(8)
+
+    });
+
+    it('should contain, given the props, active CSS properties for strict and started ', () => {
+        console.log(innerCircleShallow.find('.Strict .is-activeText').type());
+        expect(isActive('.Strict')).toEqual('p')
+        expect(isActive('.Start')).toEqual('p')
     })
 });
