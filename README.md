@@ -1,6 +1,6 @@
 # SimonGame
-Simon Game powered by redux-saga!
-<br/> npm run setup
-<br/> npm start
-<br/> Know issues:
-<br/> Typescript complains about missing mp3 files.
+- npm run setup
+- npm start
+# Know Issues
+- rebuilding all the tests with enzyme/jest
+- The Font Type? (not sure about that!)
