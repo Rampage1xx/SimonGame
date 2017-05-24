@@ -55,8 +55,8 @@ describe('testing the InnerCircle Component', () => {
     });
 
     it('should contain, given the props, active CSS properties for strict and started ', () => {
-        console.log(innerCircleShallow.find('.Strict .is-activeText').type());
         expect(isActive('.Strict')).toEqual('p')
         expect(isActive('.Start')).toEqual('p')
-    })
+    });
+
 });
