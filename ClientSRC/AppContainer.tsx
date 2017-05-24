@@ -8,8 +8,15 @@ import {generalGameStatesSelector} from './Selectors/GameStatusesSelector';
 import {playerTurnSelector} from './Selectors/playerSelector';
 import './style.css';
 
-export class AppContainer extends React.Component<IAppComponentProps, any> {
-    constructor(props: IAppComponentProps) {
+interface IProps {
+
+    playerTurn: boolean; pcTurn: boolean; timeout: boolean; limit;
+    generalGameStatus: { strict: boolean, timeout: boolean, ON: boolean, color: number, started: boolean };
+}
+
+
+export class AppContainer extends React.Component<IProps, any> {
+    constructor(props: IProps) {
         super(props);
 
     }
@@ -32,7 +39,7 @@ export class AppContainer extends React.Component<IAppComponentProps, any> {
     }
 
     public render() {
-        const props: IAppComponentProps = this.props;
+        const props: IProps = this.props;
         const {playerTurn, generalGameStatus, limit} = props;
         const {ON} = generalGameStatus;
 

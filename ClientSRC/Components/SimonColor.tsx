@@ -1,7 +1,14 @@
 import * as React from 'react';
 import {colorDispatch} from '../ColorGeneration/ColorGeneration';
 
-export class SimonColor extends React.PureComponent<any, any> {
+interface IProps {
+    css: string,
+    colorNumber: number,
+    playerTurn: boolean,
+    ON: boolean,
+}
+
+export class SimonColor extends React.PureComponent<IProps, any> {
     private css: string;
     private colorNumber: number;
     private playerTurn: boolean;

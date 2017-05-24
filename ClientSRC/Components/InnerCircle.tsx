@@ -2,7 +2,13 @@ import Toggle from 'material-ui/Toggle';
 import * as React from 'react';
 import {randomColorGenerator, strictMode, turnOffState, turnOnState} from '../ColorGeneration/ColorGeneration';
 
-export class InnerCircle extends React.PureComponent<any, any> {
+interface IProps {
+
+    playerTurn: boolean; pcTurn: boolean; timeout: boolean; limit;
+    generalGameStatus: { strict: boolean, timeout: boolean, ON: boolean, color: number, started: boolean };
+}
+
+export class InnerCircle extends React.PureComponent<IProps, any> {
     private counterNumberCSS: string;
     private counter: string;
     private strictTextCSS: string;
@@ -19,7 +25,7 @@ export class InnerCircle extends React.PureComponent<any, any> {
         this.onOff = this.onOff.bind(this);
     }
 
-    private assignValues(props: IAppComponentProps) {
+    private assignValues(props: IProps) {
         const {generalGameStatus, limit} = props;
         const {ON, started, strict} = generalGameStatus;
         this.ON = ON;
