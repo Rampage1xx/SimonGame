@@ -8,7 +8,7 @@ interface IProps {
     generalGameStatus: { strict: boolean, timeout: boolean, ON: boolean, color: number, started: boolean };
 }
 
-export class InnerCircle extends React.PureComponent<IProps, any> {
+export class InnerCircle extends React.PureComponent<any, any> {
     private counterNumberCSS: string;
     private counter: string;
     private strictTextCSS: string;

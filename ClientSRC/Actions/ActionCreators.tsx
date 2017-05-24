@@ -69,7 +69,7 @@ export const actionTurnOn = () => {
     };
 };
 
-export const actionReplay = (color, index) => {
+export const actionReplay = (color: number, index: number) => {
     return {
         type: COLOR_REPLAY,
         color,
@@ -92,7 +92,7 @@ export const actionGameStopped = () => {
     };
 };
 
-export const actionStrictMode = (value) => {
+export const actionStrictMode = (value: boolean) => {
 
     return {
         type: STRICT_MODE,
