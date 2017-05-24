@@ -1,5 +1,5 @@
 # SimonGame
-Simon Game powered by redux-saga!
-<br/> npm run setup
-<br/> npm start
-
+- npm run setup
+- npm start
+# Know Issues
+- rebuilding all the tests with enzyme/jest
