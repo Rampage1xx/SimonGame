@@ -3,3 +3,4 @@
 - npm start
 # Know Issues
 - rebuilding all the tests with enzyme/jest
+- The Font Type? (not sure about that!)
