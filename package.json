@@ -6,7 +6,7 @@
   "scripts": {
     "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha ./test/*.test.js",
     "test-jest": "jest  || ECHO. ",
-    "test-watch": "jest --watch"
+    "test-watch": "jest --watch",
     "build": "webpack",
     "setup": "npm i && webpack",
     "start": "node server.js"
